@@ -11,9 +11,11 @@ function dato(){
     if(hora==12){
         am='MD'
     }else if(hora>12){
-        am='PM'
-    }else{
-        am='AM'
+        am='PM';
+    }else if(hora==0){
+    am='MN';
+   }else{
+        am='AM';
     };
     hora=hora>12? hora-12:hora;
     hora=hora==0?hora=12:hora
